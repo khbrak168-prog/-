@@ -1,0 +1,388 @@
+import { WeddingInvitation, TemplateItem, ProgramItem, MusicTrack, BankInfo, User } from '../types';
+
+export const initialUser: User = {
+  id: 'usr-101',
+  name: 'ម៉ុន គង់ប្រាក់',
+  email: 'monkongprak@theab.digital',
+  role: 'user',
+  plan: 'premium',
+  avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+};
+
+export const presetMusicTracks: MusicTrack[] = [
+  {
+    id: 'music-1',
+    title: 'បទភ្លេងការ - របាំជូនពរ (Royal Blessing)',
+    artist: 'Traditional Khmer Mohori Ensemble',
+    url: 'https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-wedding-violin-112314.mp3',
+    isPreset: true,
+  },
+  {
+    id: 'music-2',
+    title: 'បទភ្លេងការ - របាំព្រះថោងនាងនាគ',
+    artist: 'Khmer Cultural Orchestra',
+    url: 'https://cdn.pixabay.com/download/audio/2022/10/14/audio_9939217fa3.mp3?filename=wedding-march-piano-1234.mp3',
+    isPreset: true,
+  },
+  {
+    id: 'music-3',
+    title: 'បទភ្លេងការ - កាត់សក់បង្កក់សេរី',
+    artist: 'Royal Court Ensemble',
+    url: 'https://cdn.pixabay.com/download/audio/2021/08/09/audio_226b4845a7.mp3?filename=romantic-acoustic-guitar-15875.mp3',
+    isPreset: true,
+  },
+  {
+    id: 'music-4',
+    title: 'Acoustic Khmer Wedding Melody',
+    artist: 'Theab Digital Sound Studio',
+    url: 'https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c823f669.mp3?filename=wedding-romantic-background-10651.mp3',
+    isPreset: true,
+  }
+];
+
+export const defaultBankInfo: BankInfo = {
+  bankName: 'ABA Bank (KHQR)',
+  accountName: 'MON KONGPRAK / EI SEAVHAN',
+  accountNumber: '000 888 999',
+  qrImageUrl: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80',
+  note: 'សូមអរគុណយ៉ាងជ្រាលជ្រៅសម្រាប់កាដូចងដៃសិរីមង្គលអាពាហ៍ពិពាហ៍!',
+};
+
+export const defaultProgramItems: ProgramItem[] = [
+  // Day 1
+  {
+    id: 'prog-1',
+    day: 1,
+    dateStr: 'ថ្ងៃទី១៣ ខែមករា ឆ្នាំ២០២៧',
+    time: '២:០០ នាទីរសៀល',
+    title: 'ពិធីសែនក្រុងពាលី',
+    description: 'រៀបចំគ្រឿងសក្ការបូជា សែនក្រុងពាលី សុំសេចក្តីសុខសិរីមង្គល',
+    icon: 'Sparkles',
+  },
+  {
+    id: 'prog-2',
+    day: 1,
+    dateStr: 'ថ្ងៃទី១៣ ខែមករា ឆ្នាំ២០២៧',
+    time: '៥:៣០ នាទីរសៀល',
+    title: 'ពិធីសូត្រមន្តចម្រើនព្រះបរិត្ថ',
+    description: 'និមន្តព្រះសង្ឃសូត្រមន្តចម្រើនព្រះបរិត្ថ ប្រសិទ្ធពរជ័យ',
+    icon: 'Church',
+  },
+  {
+    id: 'prog-3',
+    day: 1,
+    dateStr: 'ថ្ងៃទី១៣ ខែមករា ឆ្នាំ២០២៧',
+    time: '៥:៣០ នាទីល្ងាច',
+    title: 'អញ្ជើញភ្ញៀវកិត្តិយសពិសារអាហារពេលល្ងាច',
+    description: 'ពិសាអាហារសមោសរ និងជួបជុំសាច់ញាតិមិត្តភក្តិ',
+    icon: 'Utensils',
+  },
+  // Day 2
+  {
+    id: 'prog-4',
+    day: 2,
+    dateStr: 'ថ្ងៃទី១៤ ខែមករា ឆ្នាំ២០២៧',
+    time: '៦:៣០ នាទីព្រឹក',
+    title: 'ជួបជុំភ្ញៀវកិត្តិយសដើម្បីរៀបចំហែរជំនូន',
+    description: 'ជួបជុំបងប្អូនកូនចៅ និងភ្ញៀវកិត្តិយសដើម្បីរៀបចំជំនូនហែរ',
+    icon: 'Users',
+  },
+  {
+    id: 'prog-5',
+    day: 2,
+    dateStr: 'ថ្ងៃទី១៤ ខែមករា ឆ្នាំ២០២៧',
+    time: '៧:០០ នាទីព្រឹក',
+    title: 'ពិធីកំណត់(ហែជំនូន) ចូលរោងជ័យ',
+    description: 'ហែរជំនូនផ្លែឈើ និងគ្រឿងអាពាហ៍ពិពាហ៍ចូលរោងជ័យ',
+    icon: 'Gift',
+  },
+  {
+    id: 'prog-6',
+    day: 2,
+    dateStr: 'ថ្ងៃទី១៤ ខែមករា ឆ្នាំ២០២៧',
+    time: '៧:៣០ នាទីព្រឹក',
+    title: 'អញ្ជើញភ្ញៀវកិត្តិយសពិសារអាហារពេលព្រឹក',
+    description: 'ពិសាអាហារពេលព្រឹក និងកាហ្វេ',
+    icon: 'Coffee',
+  },
+  {
+    id: 'prog-7',
+    day: 2,
+    dateStr: 'ថ្ងៃទី១៤ ខែមករា ឆ្នាំ២០២៧',
+    time: '៨:០០ នាទីព្រឹក',
+    title: 'ពិធីស្លាកំណត់ និងបំពាក់ចិញ្ចៀន',
+    description: 'ពិធីប្រគល់ជំនូន បំពាក់ចិញ្ចៀនអាពាហ៍ពិពាហ៍កូនប្រុសស្រី',
+    icon: 'Heart',
+  },
+  {
+    id: 'prog-8',
+    day: 2,
+    dateStr: 'ថ្ងៃទី១៤ ខែមករា ឆ្នាំ២០២៧',
+    time: '៨:៣០ នាទីព្រឹក',
+    title: 'ពិធីកាត់សក់បង្កក់សេរី ចម្រើនកេសា',
+    description: 'ពិធីកាត់សក់បង្កក់សិរីសួស្តី ជ័យមង្គលដល់កូនប្រុសស្រី',
+    icon: 'Scissors',
+  },
+  {
+    id: 'prog-9',
+    day: 2,
+    dateStr: 'ថ្ងៃទី១៤ ខែមករា ឆ្នាំ២០២៧',
+    time: '១០:៣០ នាទីព្រឹក',
+    title: 'ពិធីសំពះផ្ទឹម សែនចងដៃ ព្រះថោងនាងនាគ',
+    description: 'ពិធីសំពះផ្ទឹម សែនចងដៃកូនប្រុសកូនស្រី និងតោងស្បៃព្រះថោងនាងនាគ',
+    icon: 'Flame',
+  },
+  {
+    id: 'prog-10',
+    day: 2,
+    dateStr: 'ថ្ងៃទី១៤ ខែមករា ឆ្នាំ២០២៧',
+    time: '១២:០០ នាទីថ្ងៃត្រង់',
+    title: 'អញ្ជើញភ្ញៀវកិត្តិយសពិសារអាហារថ្ងៃត្រង់',
+    description: 'ទទួលទានអាហារថ្ងៃត្រង់ប្រកបដោយភាពស្និទ្ធស្នាល',
+    icon: 'UtensilsCrossed',
+  },
+  {
+    id: 'prog-11',
+    day: 2,
+    dateStr: 'ថ្ងៃទី១៤ ខែមករា ឆ្នាំ២០២៧',
+    time: '៥:០០ នាទីថ្ងៃល្ងាច',
+    title: 'ទទួលបដិសណ្ឋារកិច្ចភ្ញៀវកិត្តិយសពិសារភោជនាហារ ពេលល្ងាច ដោយមេត្រីភាព',
+    description: 'ពិធីពិសាភោជនាហារពេលល្ងាច ពិធីកាត់នំ និងរាំលេងកម្សាន្ត',
+    icon: 'GlassWater',
+  },
+];
+
+export const defaultInvitation: WeddingInvitation = {
+  id: 'inv-001',
+  slug: 'monkongprak-eiseavhan',
+  title: 'អាពាហ៍ពិពាហ៍ ម៉ុន គង់ប្រាក់ & អុី សៀវហ័ន',
+  
+  // Parents
+  groomFatherName: 'លោក ញៀវ អឿ',
+  groomMotherName: 'លោកស្រី ហួត ហេង',
+  brideFatherName: 'លោក (ពុំមាន/អ្នកមានគុណ)',
+  brideMotherName: 'លោកស្រី ហាយ ចាន់នាង',
+
+  // Couple
+  greetingHeaderTitle: 'សិរីសួស្តីអាពាហ៍ពិពាហ៍',
+  monogramText: 'ឝ',
+  groomName: 'ម៉ុន គង់ប្រាក់',
+  brideName: 'អុី សៀវហ័ន',
+  groomTitle: 'កូនប្រុសនាម',
+  brideTitle: 'កូនស្រីនាម',
+  coupleLogoImage: '',
+  showCoupleTextName: true,
+  showCoupleLogoImage: true,
+  envelopeBgImage: '',
+  coverPhotoVertical: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&auto=format&fit=crop&q=80',
+  coverVideoVertical: '',
+  coverAspectRatio: '3:4',
+  showCoverPhotoVertical: true,
+  coverFrameStyle: 'gold-royal',
+  customFrameImage: '',
+
+  // Date & Venue
+  weddingDate: '2027-01-14T17:00:00',
+  weddingDateKhmer: 'ថ្ងៃព្រហស្បតិ៍ ទី១៤ ខែមករា ឆ្នាំ២០២៧',
+  lunarDateKhmer: 'ត្រូវនឹងថ្ងៃ៧កើត ខែ មិគសិរ-បុស្ស ឆ្នាំមមី ព.ស.២៥៧០',
+  timeKhmer: 'វេលាម៉ោង ០៥:០០ នាទីល្ងាច',
+  venueName: 'គេហដ្ឋានខាងស្រី',
+  venueAddress: 'នៅ ភូមិថ្មសំលៀង ឃុំត្រពាំងគង ស្រុកសំរោងទង ខេត្តកំពង់ស្ពឺ',
+  googleMapUrl: 'https://maps.app.goo.gl/r31fMaBuQwyisbg18?g_st=it',
+  venueImage: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=800&auto=format&fit=crop&q=80',
+  
+  // Texts
+  formalInvitationText: 'យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ សម្តេច ទ្រង់ ឯកឧត្តម លោកជំទាវ លោកអ្នកឧកញ៉ា អ្នកឧកញ៉ា ឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា ព្រមទាំងប្រិយមិត្តអញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធិពរជ័យសិរីសួស្តី ជ័យមង្គល ក្នុងពិធីអាពាហ៍ពិពាហ៍ កូនប្រុសស្រី របស់យើងខ្ញុំទាំងពីរ។',
+  guestHonorifics: 'សម្តេច ទ្រង់ ឯកឧត្តម លោកជំទាវ លោកអ្នកឧកញ៉ា អ្នកឧកញ៉ា ឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា',
+  thankYouMessage: 'យើងខ្ញុំសូមថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅចំពោះការអញ្ជើញចូលរួមជា ភ្ញៀវកិត្តិយសក្នុងពីធីរៀបអាពាហ៍ពិពាហ៍ របស់យើងខ្ញុំ!',
+  apologyMessage: 'សូមខន្តីអភ័យទោស ដោយពុំបានជួបអញ្ជើញដោយផ្ទាល់ និងការសរសេរឈ្មោះរបស់ភ្ញៀវកិត្តិយសមិនបានត្រឹមត្រូវ ឬ ពុំបានសរសេរឈ្មោះ។ សូមគោរពជូនពរ ឯកឧត្តម លោកអ្នកឧកញ៉ា អ្នកឧកញ៉ា ឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា និងភ្ញៀវកិត្តិយសទាំងអស់មានសុខភាពល្អ និងទទួលបានជោគជ័យគ្រប់ភារកិច្ច។ សូមអរគុណ !',
+  acknowledgementTitle: 'សូមថ្លែងអំណរគុណ',
+  decorSponsor: 'Image Hunter / Perfect Studio',
+  photographySponsor: 'ក្រុមការងាររៀបចំអាពាហ៍ពិពាហ៍ សុភមង្គល',
+  creatorLogoText: 'E',
+  creatorBrandName: 'បង្កើតដោយ E-THEAP',
+  creatorDescription: 'យើងខ្ញុំបង្កើតធៀបការឌីជីថល ស្អាត ប្រណិត និងទាន់សម័យ',
+  creatorPhone: '096 739 9063',
+
+  // Media
+  coverImage: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&auto=format&fit=crop&q=80',
+  galleryAspectRatio: '3/4',
+  gallery: [
+    {
+      id: 'g-1',
+      url: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&auto=format&fit=crop&q=80',
+      caption: 'ស្នាមញញឹមនៃថ្ងៃមង្គល',
+    },
+    {
+      id: 'g-2',
+      url: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&auto=format&fit=crop&q=80',
+      caption: 'រូបថត Pre-wedding កក់ក្តៅ',
+    },
+    {
+      id: 'g-3',
+      url: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&auto=format&fit=crop&q=80',
+      caption: 'ចិញ្ចៀនអាពាហ៍ពិពាហ៍',
+    },
+    {
+      id: 'g-4',
+      url: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&auto=format&fit=crop&q=80',
+      caption: 'ក្តីស្រឡាញ់ជានិរន្តរ៍',
+    },
+  ],
+  programItems: defaultProgramItems,
+  videoUrl: 'https://www.youtube.com/embed/qQwq0J8VQ48',
+  backgroundMusic: presetMusicTracks[0],
+  customMusicTracks: [
+    {
+      id: 'custom-track-1',
+      title: 'បទភ្លេងការបុរាណ - ស្រះស្រង់',
+      artist: 'វង់ភ្លេងការបុរាណខ្មែរ (Custom Saved)',
+      url: 'https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-wedding-violin-112314.mp3',
+      isPreset: false,
+    },
+    {
+      id: 'custom-track-2',
+      title: 'Acoustic Violin Wedding Melody',
+      artist: 'Custom Studio Recording MP3',
+      url: 'https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c823f669.mp3?filename=wedding-romantic-background-10651.mp3',
+      isPreset: false,
+    }
+  ],
+  musicAutoPlay: true,
+
+  // Design
+  themeColor: 'gold',
+  primaryFont: 'muol',
+  groomBrideFont: 'muol',
+  coupleFontSize: 24,
+  guestNameFontSize: 18,
+  speechFont: 'kantumruuy',
+  customPrimaryColor: '#D4AF37',
+  customBgColor: '#0F1115',
+  customTextColor: '#F3E5C8',
+  templateId: 'tpl-gold-royal',
+  templateType: 'premium',
+
+  // Gift
+  bankInfo: defaultBankInfo,
+
+  // RSVPs & Wishes
+  guestList: [
+    {
+      id: 'g-1',
+      name: 'ឯកឧត្តម សុខ ចាន់',
+      category: 'vip',
+      phone: '012 345 678',
+      guestCount: 2,
+      status: 'sent',
+      notes: 'ភ្ញៀវកិត្តិយស VIP',
+      createdAt: '2026-08-01T10:00:00Z',
+    },
+    {
+      id: 'g-2',
+      name: 'លោកជំទាវ មីនា',
+      category: 'vip',
+      phone: '015 888 999',
+      guestCount: 3,
+      status: 'sent',
+      notes: 'តុលេខ 1',
+      createdAt: '2026-08-02T14:30:00Z',
+    },
+    {
+      id: 'g-3',
+      name: 'លោក សុភា និងភរិយា',
+      category: 'friends',
+      phone: '096 111 222',
+      guestCount: 2,
+      status: 'pending',
+      notes: 'មិត្តភក្តិវិទ្យាល័យ',
+      createdAt: '2026-08-03T09:15:00Z',
+    },
+    {
+      id: 'g-4',
+      name: 'កញ្ញា រតនា',
+      category: 'colleagues',
+      phone: '077 333 444',
+      guestCount: 1,
+      status: 'pending',
+      notes: 'មិត្តរួមការងារ',
+      createdAt: '2026-08-04T11:20:00Z',
+    },
+  ],
+  rsvpList: [
+    {
+      id: 'r-1',
+      guestName: 'ឯកឧត្តម សុខ ចាន់',
+      guestCount: 2,
+      attendance: 'attending',
+      phone: '012 345 678',
+      wishes: 'សូមជូនពរកូនប្រុសស្រី ទទួលបានសុភមង្គល និងស្រឡាញ់គ្នារហូតដល់ចាស់តោងកង!',
+      createdAt: '2026-08-01T10:00:00Z',
+    },
+    {
+      id: 'r-2',
+      guestName: 'លោកជំទាវ មីនា',
+      guestCount: 3,
+      attendance: 'attending',
+      phone: '015 888 999',
+      wishes: 'សូមអបអរសាទរថ្ងៃរៀបអាពាហ៍ពិពាហ៍! មានសុភមង្គល និងរុងរឿងជានិច្ច!',
+      createdAt: '2026-08-02T14:30:00Z',
+    },
+  ],
+  rsvpEnabled: true,
+
+  // Domain & SEO
+  domainCustom: 'monkongprak-eiseavhan.theab.digital',
+  seoTitle: 'ធៀបការឌីជីថល ម៉ុន គង់ប្រាក់ & អុី សៀវហ័ន',
+  seoDescription: 'សូមគោរពអញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ក្នុងពិធីអាពាហ៍ពិពាហ៍កូនប្រុសស្រី ម៉ុន គង់ប្រាក់ & អុី សៀវហ័ន',
+  seoImage: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&auto=format&fit=crop&q=80',
+  viewsCount: 1480,
+  published: true,
+};
+
+export const sampleTemplates: TemplateItem[] = [
+  {
+    id: 'tpl-gold-royal',
+    nameKhmer: 'រាជវាំងមាស (Royal Gold Traditional)',
+    nameEnglish: 'Royal Gold Traditional',
+    type: 'premium',
+    priceUsd: 15,
+    thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=600&auto=format&fit=crop&q=80',
+    themeColor: '#D4AF37',
+    description: 'រចនាបថខ្មែរប្រពៃណីក្បាច់រចនាពណ៌មាសប្រណិត ហាយសូ ស울សម្រាប់ពិធីការផ្លូវការ',
+    features: ['ក្បាច់ខ្មែរពណ៌មាស', 'តន្ត្រីអូតូផ្លេ', 'វីដេអូកម្រិត HD', 'Google Maps Interactive', 'ABA KHQR ស្វ័យប្រវត្តិ'],
+  },
+  {
+    id: 'tpl-rose-luxury',
+    nameKhmer: 'រ៉ូសហ្គូលទំនើប (Rose Gold Elegance)',
+    nameEnglish: 'Rose Gold Elegance',
+    type: 'premium',
+    priceUsd: 12,
+    thumbnail: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&auto=format&fit=crop&q=80',
+    themeColor: '#B76E79',
+    description: 'ស្ទីលរ៉ូសហ្គូល កក់ក្តៅ ផ្កាស្រស់ស្រាយបែបទំនើប ទាក់ទាញពេញនិយម',
+    features: ['រស្មីផ្កា Rose Gold', 'Countdown Timer', 'Gallery Lightbox', 'RSVP & Wish Board'],
+  },
+  {
+    id: 'tpl-emerald-khmer',
+    nameKhmer: 'មរកតខ្មែរ (Emerald Classic)',
+    nameEnglish: 'Emerald Classic',
+    type: 'free',
+    priceUsd: 0,
+    thumbnail: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=600&auto=format&fit=crop&q=80',
+    themeColor: '#00875A',
+    description: 'ម៉ូដឥតគិតថ្លៃ ពណ៌មរកតស្រស់ថ្លា សាមញ្ញ សាត និងត្រជាក់ភ្នែក',
+    features: ['ព័ត៌មានកម្មវិធី', 'ទីតាំង Google Maps', 'ABA Gift QR', 'RSVP Form'],
+  },
+  {
+    id: 'tpl-burgundy-velvet',
+    nameKhmer: 'ប៊ឺហ្គនឌីហាយសូ (Royal Velvet Burgundy)',
+    nameEnglish: 'Royal Velvet Burgundy',
+    type: 'premium',
+    priceUsd: 18,
+    thumbnail: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&auto=format&fit=crop&q=80',
+    themeColor: '#800020',
+    description: 'ពណ៌ក្រហមប៊ឺហ្គនឌីប្រណិត បង្កើនភាពអស្ចារ្យ និងមហាសិរីសួស្តី',
+    features: ['Custom Domain Support', 'Personalized Guest Links', 'Multi-Language KH/EN', 'VIP Animated Intro'],
+  },
+];

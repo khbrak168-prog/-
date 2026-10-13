@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-moul {
+    font-family: 'Moul', cursive, serif;
+  }
+  .font-battambang {
+    font-family: 'Battambang', cursive, sans-serif;
+  }
+  .font-siemreap {
+    font-family: 'Siemreap', cursive, sans-serif;
+  }
+  .font-kantumruy {
+    font-family: 'Kantumruy Pro', sans-serif;
+  }
+  .font-koulen {
+    font-family: 'Koulen', cursive, sans-serif;
+  }
+  .font-bayon {
+    font-family: 'Bayon', cursive, sans-serif;
+  }
+  .font-dangrek {
+    font-family: 'Dangrek', cursive, sans-serif;
+  }
+  .font-preahvihear {
+    font-family: 'Preahvihear', cursive, sans-serif;
+  }
+  .font-taprom {
+    font-family: 'Taprom', cursive, sans-serif;
+  }
+  .font-content {
+    font-family: 'Content', serif;
+  }
+
+  /* Luxury Gold Metallic Text Effect */
+  .text-gold-gradient {
+    background: linear-[#BF953F], linear-[#FCF6BA], linear-[#B38728], linear-[#FBF5B7], linear-[#AA771C];
+    background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gold-bright {
+    background: linear-gradient(135deg, #FFF099 0%, #D4AF37 50%, #F3E5C8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Gold Glow Shadow */
+  .shadow-gold-glow {
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.35);
+  }
+
+  .shadow-gold-border {
+    border: 1px solid rgba(212, 175, 55, 0.6);
+  }
+}

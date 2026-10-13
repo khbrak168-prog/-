@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCF6BA" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#AA771C" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="110" fill="#0F1115" />
+  <circle cx="256" cy="256" r="230" fill="none" stroke="url(#goldGrad)" stroke-width="8" opacity="0.4" />
+  <path d="M256,120 C220,70 140,70 100,120 C50,180 80,260 256,390 C432,260 462,180 412,120 C372,70 292,70 256,120 Z" fill="none" stroke="url(#goldGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="256" y="450" font-family="'Kantumruy Pro', sans-serif" font-weight="900" font-size="44" fill="url(#goldGrad)" text-anchor="middle">E-THEAP</text>
+</svg>

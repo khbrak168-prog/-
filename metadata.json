@@ -1,0 +1,6 @@
+{
+  "name": "Theab Digital",
+  "description": "ធៀបការឌីជីថល ម៉ុន គង់ប្រាក់ & អុី សៀវហ័ន - theab.digital Khmer Digital Wedding Invitation",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
